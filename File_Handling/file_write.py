@@ -1,0 +1,5 @@
+file=open("write.txt","w")
+# content=file.read()
+# print(content)
+file.write("hello,your name is subu")
+file.close()

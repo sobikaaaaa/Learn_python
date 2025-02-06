@@ -1,0 +1,2 @@
+application started
+user logged in
