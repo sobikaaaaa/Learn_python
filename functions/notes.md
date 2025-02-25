@@ -11,3 +11,4 @@
 *cd=change directory
 *pwd=print working directory
 *rmdir=remove directory
+*cd ../=moves one directory up
