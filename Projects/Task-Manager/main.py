@@ -9,15 +9,12 @@ def display_menu():
     print("======================")
 def load_tasks(filename):
     try:        
-        if not filename:
-            with open(filename, "w") as file:
-
-                json.dump([],file)
-            return []
+        
         with open (filename, "r") as file:
                 print("file",file)
                 return json.load(file)
     except Exception as e:
+        return []
         print(e)
 def save_tasks(filename,tasks):
     with open(filename, "w") as file:
@@ -45,6 +42,7 @@ def main():
         if selected_menu == "1":
             task=input("Enter a task:\n")
             add_task(filename,task)
+        
 
 
 
