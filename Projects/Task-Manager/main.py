@@ -6,7 +6,7 @@ def display_menu():
     print("2:View task")
     print("3:Mark task as done")
     print("4:Mark task as undone")
-    print("4:Delete task")
+    print("5:Delete task")
     print("======================")
 def load_tasks(filename):
     try:        
@@ -92,13 +92,10 @@ def main():
             mark_task_undone(filename)  
         elif selected_menu=="5":
             delete_task(filename)
+        else:
+            print("Invalid command")  
+            break  
               
-
-        
-
-
-
-
 if __name__=="__main__":
     main()
 
